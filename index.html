@@ -1,47 +1,77 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio Gabriel Reis</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Gabriel Reis</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- Dev Icon Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <!-- CSS do Projeto -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Gabriel Reis</h1>
-        <p>Estudante de Engenharia de Software</p>
-    </header>
-    <section class="about">
-        <h2>Sobre Mim</h2>
-        <p>Olá!
-
-            Meu nome é Gabriel Reis Com 31 anos de idade e uma sólida experiência profissional em Tecnologia da Informação, estou em busca de uma oportunidade que me permita crescer e evoluir no campo da TI. Com graduação em Engenharia de Software pela Anhanguera em progresso, possuo conhecimentos em HTML, CSS, JavaScript, Python, Git, Github e SQL, além de ter vivência internacionalgraças a um intercâmbio, que contribuiu para o aprimoramento do meu inglês intermediário.
-            
-            Minha trajetória profissional inclui experiência como Técnico em Fibra Óptica na B&W Net, onde realizei instalações de internet em residências e empresas, fornecendo suporte e manutenção de redes externas.
-            
-            Minhas competências incluem raciocínio lógico, boa comunicação interpessoal, capacidade de trabalhar em equipe e facilidade de adaptação. Sempre estou disposto a ajudar os outros e solucionar problemas, além de gerenciar meu tempo de forma organizada.
-            
-            Em meu percurso de aprendizado contínuo, concluí diversos cursos e certificações em plataformas como Rocketseat, Udemy e Fundação Bradesco, cobrindo temas como IDEs Java, Python, MySQL, HTML5, CSS, JavaScript e Banco de Dados. Também adquiri conhecimentos em Empreendedorismo, Marketing Digital, Segurança Digital e Redes de Computadores.
-            
-            Busco agora uma nova oportunidade profissional que me permita aplicar meus conhecimentos técnicos, habilidades interpessoais e sede de crescimento, contribuindo para o sucesso da equipe e da empresa. Estou pronto para encarar novos desafios e alcançar novas metas em uma jornada de constante evolução.
-            
-            Além disso, ainda sou apaixonado por esportes, aventuras e filmes.
-            
-            Este foi um breve resumo sobre mim!</p>
-    </section>
-    <section class="projects">
-        <h2>Projetos</h2>
-        <div class="project">
-            <h3>Projeto 1</h3>
-            <p>Descrição do Projeto 1.</p>
+  <main id="container">
+    <aside id="bio-container">
+      <h2>Gabriel Reis</h2>
+      <img id="bio-image" src="img/profile.png" alt="Matheus Battisti">
+      <p>Olá, meu nome é Gabriel Reis e sou <span class="highlight">Estudante de Engenharia de Software</span>.</p>
+      <p id="welcome-text">Seja bem-vindo!</p>
+      <ul id="social-container">
+        <li><a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      </ul>
+      <div id="email-container">
+        <ion-icon name="mail-outline"></ion-icon><a href="reisgabriel@me.com">reisgabriel@me.com</a>
+      </div>
+    </aside>
+    <section id="about-container">
+      <h1 id="name">Gabriel Reis</h1>
+      <p id="title"><span class="highlight">Estudante Engenharia de Software</span></p>
+      <p class="description">Sou um estudante, gosto de aprender os mais diversos conteúdos <span class="highlight">desde front a back-end</span> até os <span class="highlight">deploys de aplicação</span>.</p>
+      <a href="#" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon> <span>Ver Projetos</span></a>
+      <h2 id="skills-section-title">Minhas Skills</h2>
+      <p class="description">Conheça as tecnologias que estudo/entendo:</p>
+      <div id="skills-container">
+        <div class="skills-box">
+          <p class="skills-title">Front-end</p>
+          <i class="devicon-html5-plain colored"></i>
+          <i class="devicon-css3-plain colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
         </div>
-        <div class="project">
-            <h3>Projeto 2</h3>
-            <p>Descrição do Projeto 2.</p>
+        <div class="skills-box">
+          <p class="skills-title">Back-end</p>
+          <i class="devicon-php-plain colored"></i>
+          <i class="devicon-nodejs-plain colored"></i>
+          <i class="devicon-python-plain colored"></i>
         </div>
+        <div class="skills-box">
+          <p class="skills-title">Databases</p>
+          <i class="devicon-mysql-plain colored"></i>
+          <i class="devicon-mongodb-plain colored"></i>
+        </div>
+        <div class="skills-box">
+          <p class="skills-title">Front-end Frameworks</p>
+          <i class="devicon-react-plain colored"></i>
+          <i class="devicon-vuejs-plain colored"></i>
+        </div>
+        <div class="skills-box">
+          <p class="skills-title">Back-end Frameworks</p>
+          <i class="devicon-laravel-plain colored"></i>
+          <i class="devicon-django-plain colored"></i>
+        </div>
+        <div class="skills-box">
+          <p class="skills-title">Tools</p>
+          <i class="devicon-linux-plain colored"></i>
+          <i class="devicon-docker-plain colored"></i>
+        </div>
+      </div>
     </section>
-    <footer>
-        <p>Contato: reisgabriel@me.com</p>
-    </footer>
+  </main>
+  <!-- Ion Icons -->
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 </html>
+        
